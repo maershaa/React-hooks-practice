@@ -1,0 +1,124 @@
+/* --- Контейнер кнопок-фильтров --- */
+.filterBtns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.filterBtns button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filterBtns button:hover {
+  background-color: #7c6df0;
+}
+
+.todoList {
+  width: 60%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+  background-color: rgb(143, 124, 187, 0.15);
+}
+
+.todoItem {
+  width: 70%; /* от  ширины todoList*/
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Чекбокс --- */
+.todoLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todoInput:checked {
+  background-color: #8f7cbb;
+  border-color: #8f7cbb;
+}
+
+.todoInput {
+  padding: 10px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e0d9f0;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+
+  transition:
+    background-color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.1s;
+}
+
+.todoInput:hover {
+  border-color: #8f7cbb;
+  box-shadow: 0 3px 8px rgba(143, 124, 187, 0.25);
+  transform: translateY(-1px);
+}
+
+/* checked — активное состояние */
+.todoInput:checked {
+  background-color: #8f7cbb;
+  border-color: #8f7cbb;
+  box-shadow: 0 4px 10px rgba(143, 124, 187, 0.3);
+}
+
+/* active — нажатие */
+.todoInput:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(143, 124, 187, 0.2);
+}
+
+.taskText {
+  flex: 1;
+  min-width: 0; /* важно для flex/grid */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.removeBtn {
+  padding: 4px 8px;
+  background-color: #f87171;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.1s;
+}
+
+.removeBtn:hover {
+  background-color: #fca5a5;
+  border-color: #f87171;
+  box-shadow: 0 4px 10px rgba(248, 113, 113, 0.3);
+  transform: translateY(-1px);
+}

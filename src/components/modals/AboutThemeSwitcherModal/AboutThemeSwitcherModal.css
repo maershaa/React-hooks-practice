@@ -1,0 +1,73 @@
+.container {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  background: #0f0f0f;
+  color: #eaeaea;
+
+  border-radius: 12px;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== titles ===== */
+
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 18px 0 10px;
+  color: #a78bfa;
+}
+
+/* ===== sections ===== */
+
+.section {
+  margin-bottom: 24px;
+}
+
+/* ===== text ===== */
+
+.text {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 4px 0;
+}
+
+/* ===== lists ===== */
+
+.list {
+  margin: 8px 0 0 18px;
+}
+
+.listItem {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* ===== code block ===== */
+
+.codeBlock {
+  background: #1b1b1b;
+  padding: 12px;
+  border-radius: 8px;
+
+  overflow-x: auto;
+  font-size: 13px;
+  color: #9cdcfe;
+
+  margin-top: 10px;
+}
+
+/* ===== divider ===== */
+
+.divider {
+  height: 1px;
+  background: #2a2a2a;
+  border: none;
+  margin: 20px 0;
+}
