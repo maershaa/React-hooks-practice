@@ -93,7 +93,7 @@ git branch -M main
 1. Добавляем remote:
 
 ```bash
-git remote add origin https://github.com/maershaa/react-mini-apps.git
+git remote add origin https://github.com/maershaa/React-hooks-practice.git
 ```
 
 2. Пушим ветку main:
